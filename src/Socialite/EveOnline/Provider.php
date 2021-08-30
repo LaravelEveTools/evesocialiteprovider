@@ -80,6 +80,10 @@ class Provider extends AbstractProvider
         return $metadata->jwks_uri;
     }
 
+    /**
+     * @param string $code
+     * @return array|string[]
+     */
     protected function getTokenFields($code)
     {
         return array_merge(parent::getTokenFields($code), ['grant_type'=>'authorization_code']);
