@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpunit colors="true"
+         bootstrap="./vendor/autoload.php"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true">
+
+    <coverage>
+        <include>
+            <directory suffix=".php">./src/</directory>
+        </include>
+    </coverage>
+    <testsuite name="EVEImages">
+        <directory>./tests</directory>
+    </testsuite>
+
+</phpunit>
